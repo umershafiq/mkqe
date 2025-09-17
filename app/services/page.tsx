@@ -1,18 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import {
-  Truck,
-  Cake as Crane,
-  MapPin,
-  Shield,
-  Clock,
-  Users,
-  ArrowRight,
-  CheckCircle,
-  Phone,
-  Calculator,
-} from "lucide-react"
+import { Truck, Cake as Crane, Shield, Clock, Users, ArrowRight, CheckCircle, Phone, Calculator, Forklift } from "lucide-react"
 import Link from "next/link"
 
 export default function ServicesPage() {
@@ -102,7 +91,7 @@ export default function ServicesPage() {
       image: "/industrial-crane-lifting-heavy-machinery-construction.jpg",
     },
     {
-      icon: Crane,
+      icon: Forklift,
       title: "Fork Lifters",
       description: "On-site forklift support for loading, unloading, and staging",
       features: [
@@ -192,9 +181,7 @@ export default function ServicesPage() {
               <Badge variant="secondary" className="mb-4">
                 Our Services
               </Badge>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
-                Comprehensive Heavy Transport Solutions
-              </h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance">Heavy Haulage, Cranes, and Specialized Trailers</h1>
               <p className="text-xl text-primary-foreground/90 text-pretty mb-8">
                 Pakistan-based logistics and transport consultants providing heavy haulers, lowbed trailers, 40' DXL &
                 SXL trailers, 20' and Mazda trucks, hydraulic cranes, and fork lifters.
@@ -230,10 +217,7 @@ export default function ServicesPage() {
               Core Services
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold mb-3 text-balance">Specialized Transport Solutions in Pakistan</h2>
-            <p className="text-base text-muted-foreground max-w-3xl mx-auto text-pretty">
-              Our comprehensive range of services covers every aspect of heavy machinery transport, from initial
-              planning to final installation.
-            </p>
+            <p className="text-base text-muted-foreground max-w-3xl mx-auto text-pretty">Route surveys, permits, escort cars, cranes, and heavy haulage for oversized and overweight cargo.</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">

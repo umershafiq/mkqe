@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Truck, Cake as Crane, Settings, Shield, Clock, Award, ArrowRight, CheckCircle } from "lucide-react"
+import { Truck, Cake as Crane, Shield, Clock, Award, ArrowRight, CheckCircle, Forklift } from "lucide-react"
 import Link from "next/link"
 
 export default function HomePage() {
@@ -13,7 +13,7 @@ export default function HomePage() {
     { icon: Truck, title: "20' Trucks", description: "Reliable 20-foot cargo moves", features: ["Flexible scheduling", "Urban capable", "Rapid dispatch"] },
     { icon: Truck, title: "Mazda Trucks", description: "Versatile medium-duty transport", features: ["Well-maintained fleet", "Skilled operators", "Cargo protection"] },
     { icon: Crane, title: "Hydraulic Cranes", description: "Lifting and positioning services", features: ["25–500 ton cranes", "Certified riggers", "Precision lifts"] },
-    { icon: Shield, title: "Fork Lifters", description: "On-site loading/unloading support", features: ["Multiple capacities", "Skilled operators", "Tight-space moves"] },
+    { icon: Forklift, title: "Fork Lifters", description: "On-site loading and unloading support", features: ["Multiple capacities", "Skilled operators", "Tight-space moves"] },
   ]
 
   const stats = [
@@ -85,12 +85,9 @@ export default function HomePage() {
             <Badge variant="outline" className="mb-4">
               Our Expertise
             </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">
-              Comprehensive Heavy Transport Solutions
-            </h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">Heavy Haulage, Cranes, and Specialized Trailers</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-              From planning to execution, we provide end-to-end solutions for your most challenging heavy machinery
-              transport and logistics requirements.
+              From route surveys and permits to cranes and haulage, we provide end-to-end logistics for oversized and overweight loads across Pakistan.
             </p>
           </div>
 

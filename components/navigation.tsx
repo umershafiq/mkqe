@@ -19,9 +19,9 @@ export function Navigation() {
   return (
     <header className="bg-primary text-primary-foreground shadow-lg">
       {/* Top contact bar */}
-      <div className="bg-primary/90 py-2 px-4">
-        <div className="container mx-auto flex justify-between items-center text-sm">
-          <div className="flex items-center gap-6">
+      <div className="bg-primary/90 py-1.5 px-3">
+        <div className="container mx-auto flex justify-between items-center text-xs sm:text-sm">
+          <div className="flex items-center gap-3 sm:gap-6 overflow-x-auto no-scrollbar">
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
               <span>0333-3576806</span>
@@ -38,28 +38,28 @@ export function Navigation() {
               href="https://wa.me/92333576806"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline hover:text-secondary"
+              className="underline hover:text-secondary whitespace-nowrap"
             >
               WhatsApp
             </a>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden md:block whitespace-nowrap">
             <span>24/7 Emergency Transport Services</span>
           </div>
         </div>
       </div>
 
       {/* Main navigation */}
-      <nav className="container mx-auto px-4 py-4">
+      <nav className="container mx-auto px-3 py-3 sm:px-4 sm:py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="bg-secondary text-secondary-foreground p-2 rounded-lg">
-              <div className="w-8 h-8 flex items-center justify-center font-bold text-xl">MKQE</div>
+          <Link href="/" className="flex items-center space-x-2 min-w-0">
+            <div className="bg-secondary text-secondary-foreground p-2 rounded-lg flex-shrink-0">
+              <div className="w-8 h-8 flex items-center justify-center font-bold text-lg sm:text-xl">MKQE</div>
             </div>
-            <div>
-              <h1 className="text-xl font-bold">M. Kashan & Qasim (MKQE) Enterprises</h1>
-              <p className="text-sm opacity-90">Professional Machinery Moving</p>
+            <div className="truncate">
+              <h1 className="text-lg sm:text-xl font-bold truncate">M. Kashan & Qasim (MKQE) Enterprises</h1>
+              <p className="text-xs sm:text-sm opacity-90 truncate">Professional Machinery Moving</p>
             </div>
           </Link>
 

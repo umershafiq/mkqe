@@ -171,33 +171,33 @@ export default function ServicesPage() {
       <section className="relative bg-primary text-primary-foreground">
         <div className="absolute inset-0 bg-black/20"></div>
         <div
-          className="relative py-20 bg-cover bg-center bg-no-repeat"
+          className="relative py-14 sm:py-20 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url('/heavy-machinery-transport-services-hero.jpg')`,
           }}
         >
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-3 sm:px-4">
             <div className="max-w-3xl">
-              <Badge variant="secondary" className="mb-4">
+              <Badge variant="secondary" className="mb-3 sm:mb-4 text-xs sm:text-sm w-fit">
                 Our Services
               </Badge>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-balance">Heavy Haulage, Cranes, and Specialized Trailers</h1>
-              <p className="text-xl text-primary-foreground/90 text-pretty mb-8">
+              <h1 className="text-3xl md:text-5xl font-bold mb-4 sm:mb-6 text-balance break-words hyphens-auto">Heavy Haulage, Cranes, and Specialized Trailers</h1>
+              <p className="text-base sm:text-xl text-primary-foreground/90 text-pretty mb-6 sm:mb-8 break-words hyphens-auto leading-relaxed">
                 Pakistan-based logistics and transport consultants providing heavy haulers, lowbed trailers, 40' DXL &
                 SXL trailers, 20' and Mazda trucks, hydraulic cranes, and fork lifters.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Link href="/contact">
-                  <Button size="lg" variant="secondary" className="px-8">
+                  <Button size="lg" variant="secondary" className="px-6 sm:px-8">
                     Get Quote
                     <Calculator className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
                 <Link href="tel:0333-3576806">
                   <Button
-                    size="lg"
+                    size="sm"
                     variant="outline"
-                    className="px-8 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent"
+                    className="px-6 sm:px-8 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent"
                   >
                     Call Now
                     <Phone className="ml-2 h-5 w-5" />

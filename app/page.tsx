@@ -29,7 +29,7 @@ export default function HomePage() {
       <section className="relative bg-gradient-to-r from-primary to-primary/90 text-primary-foreground">
         <div className="absolute inset-0 bg-black/20"></div>
         <div
-          className="relative min-h-[600px] flex items-center bg-cover bg-center bg-no-repeat"
+          className="relative min-h-[420px] sm:min-h-[600px] flex items-center bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url('/heavy-machinery-crane-lifting-industrial-equipment.jpg')`,
           }}
@@ -39,10 +39,10 @@ export default function HomePage() {
               <Badge variant="secondary" className="mb-3 sm:mb-4 text-xs sm:text-sm font-medium w-fit">
                 Professional Heavy Machinery Transport
               </Badge>
-              <h1 className="text-3xl md:text-5xl font-bold mb-4 sm:mb-6 text-balance">
+              <h1 className="text-3xl md:text-5xl font-bold mb-4 sm:mb-6 text-balance break-words hyphens-auto">
                 Moving Your Heavy Equipment with Precision & Safety
               </h1>
-              <p className="text-base sm:text-xl md:text-2xl mb-6 sm:mb-8 text-primary-foreground/90 text-pretty">
+              <p className="text-base sm:text-xl md:text-2xl mb-6 sm:mb-8 text-primary-foreground/90 text-pretty break-words hyphens-auto leading-relaxed">
                 Pakistan-based logistics and transport consultants: heavy haulers, lowbed trailers, 40' DXL & SXL
                 trailers, 20' trucks, Mazda trucks, hydraulic cranes, and fork lifters. Available 24/7 for emergency services.
               </p>

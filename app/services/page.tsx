@@ -8,99 +8,154 @@ export default function ServicesPage() {
   const services = [
     {
       icon: Truck,
-      title: "Heavy Haulers",
-      description: "Specialized transport for oversized and overweight industrial equipment",
+      title: "40' Flat Bed Trailers",
+      description: "Single axle and double axle 40-foot flat bed trailers for versatile cargo transport",
       features: [
-        "Multi-axle heavy haul units",
-        "Route planning and permits",
-        "Escort vehicles and traffic management",
-        "Real-time GPS tracking",
+        "Single axle and double axle configurations",
+        "Heavy-duty construction",
+        "Professional loading supervision",
+        "Nationwide coverage in Pakistan",
       ],
-      image: "/heavy-haul-transport-oversized-industrial-equipment.jpg",
     },
     {
       icon: Truck,
-      title: "Lowbed Trailers",
-      description: "Lowbed solutions for tall or heavy machinery requiring low deck height",
+      title: "Semi Low Bed Trailers",
+      description: "Semi low bed solutions for tall machinery requiring reduced deck height",
       features: [
         "Detachable gooseneck options",
         "Optimal weight distribution",
         "Load securing and lashing",
         "Route surveys for height clearances",
       ],
-      image: "/heavy-machinery-transport-services-hero.jpg",
     },
     {
       icon: Truck,
-      title: "40' DXL Trailers",
-      description: "Double-axle 40-foot trailers for containerized and machinery loads",
+      title: "Low Beds & Heavy Low Beds",
+      description: "Specialized low bed trailers for heavy machinery and oversized equipment",
       features: [
-        "High-capacity configurations",
-        "Container locks and tie-downs",
-        "Professional loading supervision",
-        "Nationwide coverage in Pakistan",
+        "Heavy-duty low bed configurations",
+        "Multi-axle heavy haul units",
+        "Route planning and permits",
+        "Escort vehicles and traffic management",
       ],
-      image: "/professional-heavy-machinery-transport-truck-with-.jpg",
     },
     {
       icon: Truck,
-      title: "40' SXL Trailers",
-      description: "Single-axle 40-foot trailers for efficient long-haul moves",
+      title: "45' / 48' Long Heavy Haulers",
+      description: "Extended length heavy haulers for large-scale industrial equipment",
       features: [
-        "Optimized for lighter 40' loads",
-        "Cost-effective operations",
-        "Experienced drivers",
-        "Door-to-door delivery",
+        "45' and 48' configurations",
+        "High-capacity transport",
+        "Real-time GPS tracking",
+        "Professional drivers and equipment",
       ],
-      image: "/heavy-transport-team-safety-equipment-industrial.jpg",
     },
     {
       icon: Truck,
-      title: "20' Trucks",
-      description: "Reliable 20-foot trucks for compact machinery and general cargo",
+      title: "Hydraulic / Multi Axle Trailers",
+      description: "Advanced hydraulic and multi-axle trailers for complex transport needs",
       features: [
-        "Flexible scheduling",
-        "Rapid dispatch",
-        "Urban delivery capable",
-        "Pakistan-wide service",
+        "Hydraulic suspension systems",
+        "Multi-axle configurations",
+        "Precision load distribution",
+        "Advanced safety systems",
       ],
-      image: "/placeholder.jpg",
     },
     {
       icon: Truck,
-      title: "Mazda Trucks",
-      description: "Versatile Mazda trucks for medium-duty transport requirements",
+      title: "20' Flat Bed",
+      description: "Versatile 20-foot flat bed trucks for medium-sized equipment and cargo",
       features: [
-        "Experienced operators",
-        "Cost-efficient moves",
+        "Flexible loading configurations",
+        "Urban and highway capable",
+        "Timely delivery schedules",
+        "Cost-effective solutions",
+      ],
+    },
+    {
+      icon: Truck,
+      title: "14' Flat Bed & High Wall Trucks",
+      description: "Compact 14-foot flat bed and high wall trucks for specialized cargo",
+      features: [
+        "High wall configurations",
+        "Compact maneuverability",
+        "Versatile cargo options",
+        "Efficient urban transport",
+      ],
+    },
+    {
+      icon: Truck,
+      title: "Small Pickups",
+      description: "Small pickup trucks for light cargo and quick deliveries",
+      features: [
+        "Light cargo transport",
+        "Quick turnaround times",
+        "Urban accessibility",
+        "Cost-effective solutions",
+      ],
+    },
+    {
+      icon: Truck,
+      title: "Mazda Light Trucks",
+      description: "Versatile Mazda light trucks for medium-duty transport needs",
+      features: [
         "Well-maintained fleet",
+        "Skilled operators",
         "Cargo protection",
+        "Reliable performance",
       ],
-      image: "/placeholder.jpg",
     },
     {
-      icon: Crane,
-      title: "Hydraulic Cranes",
-      description: "Professional crane services for lifting and positioning heavy machinery",
+      icon: Truck,
+      title: "Primovers",
+      description: "Single axle and double axle primovers for specialized transport",
       features: [
-        "Mobile cranes 25–500 tons",
-        "Certified riggers",
-        "Precision placement",
-        "Full safety compliance",
+        "Single and double axle options",
+        "Specialized configurations",
+        "Professional operators",
+        "Custom transport solutions",
       ],
-      image: "/industrial-crane-lifting-heavy-machinery-construction.jpg",
     },
     {
       icon: Forklift,
       title: "Fork Lifters",
-      description: "On-site forklift support for loading, unloading, and staging",
+      description: "On-site loading and unloading support with various capacity options",
       features: [
         "Multiple capacity options",
         "Skilled operators",
-        "Tight-space maneuvering",
-        "Short- and long-term hire",
+        "Tight-space maneuverability",
+        "Professional service",
       ],
-      image: "/placeholder.jpg",
+    },
+    {
+      icon: Crane,
+      title: "Cranes Hydraulic / Mechanical",
+      description: "Hydraulic and mechanical cranes for lifting and positioning services",
+      features: [
+        "Hydraulic and mechanical options",
+        "Various capacity ranges",
+        "Certified riggers",
+        "Precision lifting operations",
+      ],
+    },
+  ]
+
+  const additionalServices = [
+    {
+      title: "Warehouses",
+      description: "Secure storage facilities for your cargo and equipment",
+    },
+    {
+      title: "Hand Carry Services",
+      description: "Professional hand carry services for sensitive and valuable items",
+    },
+    {
+      title: "Air Freight Services",
+      description: "Air freight solutions for time-sensitive cargo delivery",
+    },
+    {
+      title: "Sale / Purchase of Generators & Compressors",
+      description: "Sale and purchase of low and heavy generators & compressors with safety certification",
     },
   ]
 
@@ -183,8 +238,7 @@ export default function ServicesPage() {
               </Badge>
               <h1 className="text-3xl md:text-5xl font-bold mb-4 sm:mb-6 text-balance break-words hyphens-auto">Heavy Haulage, Cranes, and Specialized Trailers</h1>
               <p className="text-base sm:text-xl text-primary-foreground/90 text-pretty mb-6 sm:mb-8 break-words hyphens-auto leading-relaxed">
-                Pakistan-based logistics and transport consultants providing heavy haulers, lowbed trailers, 40' DXL &
-                SXL trailers, 20' and Mazda trucks, hydraulic cranes, and fork lifters.
+                Pakistan-based logistics and transport consultants providing 40' Flat Bed Trailers, Semi Low Bed Trailers, Low Beds & Heavy Low Beds, 45'/48' Long Heavy Haulers, Hydraulic/Multi Axle Trailers, 20' Flat Bed, 14' Flat Bed & High Wall Trucks, Small Pickups, Mazda Light Trucks, Primovers, Fork Lifters, Cranes Hydraulic/Mechanical, Warehouses, Hand Carry Services, Air Freight Services, and Sale/Purchase of Generators & Compressors.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Link href="/contact">
@@ -245,6 +299,37 @@ export default function ServicesPage() {
                     Get quote
                     <ArrowRight className="h-3.5 w-3.5" />
                   </Link>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Services */}
+      <section className="py-20 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <Badge variant="outline" className="mb-4">
+              Additional Services
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">Comprehensive Logistics Solutions</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
+              Beyond transportation, we offer a complete range of logistics and support services to meet all your business needs.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {additionalServices.map((service, index) => (
+              <Card key={index} className="text-center hover:shadow-lg transition-all duration-300 group">
+                <CardHeader>
+                  <div className="bg-primary/10 p-3 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                    <Shield className="h-6 w-6" />
+                  </div>
+                  <CardTitle className="text-lg group-hover:text-primary transition-colors">{service.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="text-sm">{service.description}</CardDescription>
                 </CardContent>
               </Card>
             ))}
@@ -343,7 +428,7 @@ export default function ServicesPage() {
                   <div>
                     <h3 className="font-semibold mb-2">Expert Team</h3>
                     <p className="text-muted-foreground">
-                      Certified professionals with decades of combined experience in heavy transport.
+                      Certified professionals with years of combined experience in heavy transport.
                     </p>
                   </div>
                 </div>

@@ -22,8 +22,9 @@ export default function ContactPage() {
       icon: MapPin,
       title: "Head Office",
       details: [
-        "Office #2, Plot #644, Gate #03 (New)",
-        "Truck Stand Hawksbay Road, Karachi",
+        "Suite No. 2, Plot #644, Gate #03",
+        "New Truck Stand Hawksbay Road",
+        "Karachi-74000, Sindh, Pakistan",
       ],
       description: "Main office and equipment yard",
     },
@@ -35,19 +36,66 @@ export default function ContactPage() {
     },
   ]
 
+  const offices = [
+    {
+      city: "Karachi (Head Office)",
+      address: [
+        "Suite No. 2, Plot #644, Gate #03",
+        "New Truck Stand Hawksbay Road",
+        "Karachi-74000, Sindh, Pakistan"
+      ],
+      contactPerson: "Mr. Kamran Iqbal (CEO)",
+      phone: "0333-3576806 / 0305-2313225",
+      email: "mkqenterprises@gmail.com"
+    },
+    {
+      city: "Islamabad",
+      address: [
+        "Sector #: I-9, Industrial Area",
+        "Islamabad - PK"
+      ],
+      contactPerson: "Mr. M. Imran (Branch Operations Manager)",
+      phone: "0300-8258560 / 0302-8298560",
+      email: "operations0125@gmail.com"
+    },
+    {
+      city: "Lahore",
+      address: [
+        "House No: 15, Zain Homes",
+        "Hamza Street, Lajna Chowk",
+        "College Road, Township",
+        "Lahore - PK"
+      ],
+      contactPerson: "Mr. Wajid Ali (Branch Operations Manager)",
+      phone: "042-35912701 / 0303-4446833 / 0331-2655532",
+      email: "operations0125@gmail.com"
+    },
+    {
+      city: "Sukkur",
+      address: [
+        "Al-Khadim Petroleum Services",
+        "Rohri Bypass, Rohri",
+        "Sukkur - PK"
+      ],
+      contactPerson: "Mr. Ayaz Ali Soomro (Branch Operations Manager)",
+      phone: "071-5001818 / 0300-9313441",
+      email: "operations0125@gmail.com"
+    }
+  ]
+
   const serviceAreas = [
-    "Texas",
-    "Oklahoma",
-    "Louisiana",
-    "Arkansas",
-    "New Mexico",
-    "Colorado",
-    "Kansas",
-    "Missouri",
-    "Mississippi",
-    "Alabama",
-    "Tennessee",
-    "Arizona",
+    "Karachi",
+    "Islamabad",
+    "Lahore",
+    "Sukkur",
+    "Rawalpindi",
+    "Faisalabad",
+    "Multan",
+    "Peshawar",
+    "Quetta",
+    "Hyderabad",
+    "Gujranwala",
+    "Sialkot",
   ]
 
   return (
@@ -163,24 +211,42 @@ export default function ContactPage() {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <MapPin className="h-5 w-5 text-primary" />
+                    Our Office Locations
+                  </CardTitle>
+                  <CardDescription>Visit us at any of our four locations across Pakistan</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-6">
+                    {offices.map((office, index) => (
+                      <div key={index} className="border-l-4 border-primary pl-4">
+                        <h4 className="font-semibold text-lg mb-2">{office.city}</h4>
+                        <div className="space-y-1 text-sm text-muted-foreground">
+                          {office.address.map((line, idx) => (
+                            <p key={idx}>{line}</p>
+                          ))}
+                        </div>
+                        <div className="mt-2 space-y-1">
+                          <p className="text-sm font-medium">{office.contactPerson}</p>
+                          <p className="text-sm text-primary">{office.phone}</p>
+                          <p className="text-sm text-primary">{office.email}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <MapPin className="h-5 w-5 text-primary" />
                     Service Areas in Pakistan
                   </CardTitle>
                   <CardDescription>We provide heavy transport services across Pakistan</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="grid grid-cols-2 gap-2">
-                    {[
-                      "Karachi",
-                      "Lahore",
-                      "Islamabad",
-                      "Faisalabad",
-                      "Multan",
-                      "Quetta",
-                      "Peshawar",
-                      "Hyderabad",
-                      "Sukkur",
-                      "Gwadar",
-                    ].map((area, index) => (
+                    {serviceAreas.map((area, index) => (
                       <Badge key={index} variant="secondary" className="justify-center">
                         {area}
                       </Badge>

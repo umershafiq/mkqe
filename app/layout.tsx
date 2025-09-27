@@ -11,7 +11,7 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "M. Kashan & Qasim (MKQE) Enterprises – Logistics & Transport Consultant",
   description:
-    "Pakistan-based logistics & transport consultant: Heavy Haulers, Lowbed Trailers, 40' DXL & SXL Trailers, 20' Trucks, Mazda Trucks, Hydraulic Cranes, and Fork Lifters.",
+    "Pakistan-based logistics & transport consultant: 40' Flat Bed Trailers, Semi Low Bed Trailers, Low Beds & Heavy Low Beds, 45'/48' Long Heavy Haulers, Hydraulic/Multi Axle Trailers, 20' Flat Bed, 14' Flat Bed & High Wall Trucks, Small Pickups, Mazda Light Trucks, Primovers, Fork Lifters, Cranes Hydraulic/Mechanical, Warehouses, Hand Carry Services, Air Freight Services, and Sale/Purchase of Generators & Compressors.",
   generator: "v0.app",
 }
 

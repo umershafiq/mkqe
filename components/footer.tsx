@@ -15,9 +15,29 @@ export function Footer() {
               <h3 className="text-lg font-bold">M. Kashan & Qasim (MKQE) Enterprises</h3>
             </div>
             <p className="text-primary-foreground/80 mb-4">
-              Professional heavy machinery transport services with over 20 years of experience. We handle your most
+              Professional heavy machinery transport services with over 4 years of experience. We handle your most
               challenging logistics needs with safety and precision.
             </p>
+            <div className="mb-4">
+              <p className="text-sm text-primary-foreground/70 mb-2">Trusted by industry leaders:</p>
+              <div className="flex flex-wrap gap-2 text-xs text-primary-foreground/60">
+                <span>PETRONAS</span>
+                <span>•</span>
+                <span>Schlumberger</span>
+                <span>•</span>
+                <span>Crescent Steel</span>
+                <span>•</span>
+                <span>Descon</span>
+                <span>•</span>
+                <span>ICI Pakistan</span>
+                <span>•</span>
+                <span>Baker Hughes</span>
+                <span>•</span>
+                <span>MCB Bank</span>
+                <span>•</span>
+                <span>Standard Chartered</span>
+              </div>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -51,14 +71,21 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li>Heavy Haulers</li>
-              <li>Lowbed Trailers</li>
-              <li>40' DXL Trailers</li>
-              <li>40' SXL Trailers</li>
-              <li>20' Trucks</li>
-              <li>Mazda Trucks</li>
-              <li>Hydraulic Cranes</li>
+              <li>40' Flat Bed Trailers</li>
+              <li>Semi Low Bed Trailers</li>
+              <li>Low Beds & Heavy Low Beds</li>
+              <li>45' / 48' Long Heavy Haulers</li>
+              <li>Hydraulic / Multi Axle Trailers</li>
+              <li>20' Flat Bed</li>
+              <li>14' Flat Bed & High Wall Trucks</li>
+              <li>Small Pickups</li>
+              <li>Mazda Light Trucks</li>
+              <li>Primovers</li>
               <li>Fork Lifters</li>
+              <li>Cranes Hydraulic / Mechanical</li>
+              <li>Warehouses</li>
+              <li>Hand Carry Services</li>
+              <li>Air Freight Services</li>
             </ul>
           </div>
 
@@ -80,7 +107,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-secondary" />
-                <span>Office #2, Plot #644, Gate #03 (New), Truck Stand Hawksbay Rd, Karachi</span>
+                <span>Suite No. 2, Plot #644, Gate #03, New Truck Stand Hawksbay Rd, Karachi-74000</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4 text-secondary" />
@@ -90,10 +117,16 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
-          <p className="text-primary-foreground/80">
-            © 2025 M. Kashan & Qasim (MKQE) Enterprises. All rights reserved. | Professional Heavy Machinery Transport Services
-          </p>
+        <div className="border-t border-primary-foreground/20 mt-8 pt-8">
+          <div className="text-center mb-4">
+            <p className="text-primary-foreground/80">
+              © 2025 M. Kashan & Qasim (MKQE) Enterprises. All rights reserved. | Professional Heavy Machinery Transport Services
+            </p>
+          </div>
+          <div className="text-center text-sm text-primary-foreground/60">
+            <p className="mb-2">Company Registration: NTN # 4756976-4</p>
+            <p>Tax Numbers: SRB # S-4756976-4 | BRA # B-4756976-4 | PRA # P-4756976-4</p>
+          </div>
         </div>
       </div>
     </footer>

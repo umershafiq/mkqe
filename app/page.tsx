@@ -6,19 +6,23 @@ import Link from "next/link"
 
 export default function HomePage() {
   const services = [
-    { icon: Truck, title: "Heavy Haulers", description: "Oversized and overweight loads across Pakistan", features: ["Escort & permits", "Route planning", "Multi-axle units"] },
-    { icon: Truck, title: "Lowbed Trailers", description: "Low deck for tall/heavy machinery", features: ["Detachable gooseneck", "Load securing", "Height surveys"] },
-    { icon: Truck, title: "40' DXL Trailers", description: "Double-axle 40-foot trailer services", features: ["High capacity", "Container locks", "Nationwide"] },
-    { icon: Truck, title: "40' SXL Trailers", description: "Single-axle 40-foot long-haul", features: ["Cost-effective", "Experienced drivers", "Door-to-door"] },
-    { icon: Truck, title: "20' Trucks", description: "Reliable 20-foot cargo moves", features: ["Flexible scheduling", "Urban capable", "Rapid dispatch"] },
-    { icon: Truck, title: "Mazda Trucks", description: "Versatile medium-duty transport", features: ["Well-maintained fleet", "Skilled operators", "Cargo protection"] },
-    { icon: Crane, title: "Hydraulic Cranes", description: "Lifting and positioning services", features: ["25–500 ton cranes", "Certified riggers", "Precision lifts"] },
-    { icon: Forklift, title: "Fork Lifters", description: "On-site loading and unloading support", features: ["Multiple capacities", "Skilled operators", "Tight-space moves"] },
+    { icon: Truck, title: "40' Flat Bed Trailers", description: "Single & double axle configurations", features: ["Heavy-duty construction", "Professional loading", "Nationwide coverage"] },
+    { icon: Truck, title: "Semi Low Bed Trailers", description: "Reduced deck height solutions", features: ["Detachable gooseneck", "Weight distribution", "Height clearance surveys"] },
+    { icon: Truck, title: "Low Beds & Heavy Low Beds", description: "Specialized heavy machinery transport", features: ["Multi-axle units", "Route planning", "Escort vehicles"] },
+    { icon: Truck, title: "45' / 48' Long Heavy Haulers", description: "Extended length for large equipment", features: ["High capacity", "GPS tracking", "Professional drivers"] },
+    { icon: Truck, title: "Hydraulic / Multi Axle Trailers", description: "Advanced transport solutions", features: ["Hydraulic suspension", "Precision distribution", "Safety systems"] },
+    { icon: Truck, title: "20' Flat Bed", description: "Versatile medium-duty transport", features: ["Flexible loading", "Urban capable", "Cost effective"] },
+    { icon: Truck, title: "14' Flat Bed & High Wall Trucks", description: "Compact specialized transport", features: ["High wall options", "Urban maneuverability", "Versatile cargo"] },
+    { icon: Truck, title: "Small Pickups", description: "Light cargo and quick deliveries", features: ["Quick turnaround", "Urban access", "Cost effective"] },
+    { icon: Truck, title: "Mazda Light Trucks", description: "Medium-duty transport needs", features: ["Well-maintained fleet", "Skilled operators", "Reliable performance"] },
+    { icon: Truck, title: "Primovers", description: "Single & double axle specialized transport", features: ["Custom configurations", "Professional operators", "Specialized solutions"] },
+    { icon: Forklift, title: "Fork Lifters", description: "Loading and unloading support", features: ["Multiple capacities", "Skilled operators", "Tight-space moves"] },
+    { icon: Crane, title: "Cranes Hydraulic / Mechanical", description: "Lifting and positioning services", features: ["Various capacities", "Certified riggers", "Precision operations"] },
   ]
 
   const stats = [
     { number: "500+", label: "Projects Completed" },
-    { number: "20+", label: "Years Experience" },
+    { number: "4+", label: "Years Experience" },
     { number: "24/7", label: "Emergency Service" },
     { number: "100%", label: "Safety Record" },
   ]
@@ -26,35 +30,34 @@ export default function HomePage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary to-primary/90 text-primary-foreground">
+      <section className="relative gradient-primary text-primary-foreground">
         <div className="absolute inset-0 bg-black/20"></div>
         <div
-          className="relative min-h-[420px] sm:min-h-[600px] flex items-center bg-cover bg-center bg-no-repeat"
+          className="relative section-padding flex items-center bg-cover bg-center bg-no-repeat min-h-[500px] sm:min-h-[700px]"
           style={{
             backgroundImage: `url('/heavy-machinery-crane-lifting-industrial-equipment.jpg')`,
           }}
         >
-          <div className="container mx-auto px-3 sm:px-4 py-14 sm:py-20">
-            <div className="max-w-3xl">
-              <Badge variant="secondary" className="mb-3 sm:mb-4 text-xs sm:text-sm font-medium w-fit">
+          <div className="container mx-auto container-padding">
+            <div className="max-w-5xl">
+              <Badge variant="secondary" className="mb-8 text-sm font-medium px-4 py-2 w-fit">
                 Professional Heavy Machinery Transport
               </Badge>
-              <h1 className="text-3xl md:text-5xl font-bold mb-4 sm:mb-6 text-balance break-words hyphens-auto">
+              <h1 className="mb-8 text-balance leading-tight">
                 Moving Your Heavy Equipment with Precision & Safety
               </h1>
-              <p className="text-base sm:text-xl md:text-2xl mb-6 sm:mb-8 text-primary-foreground/90 text-pretty break-words hyphens-auto leading-relaxed">
-                Pakistan-based logistics and transport consultants: heavy haulers, lowbed trailers, 40' DXL & SXL
-                trailers, 20' trucks, Mazda trucks, hydraulic cranes, and fork lifters. Available 24/7 for emergency services.
+              <p className="text-xl md:text-2xl mb-10 text-primary-foreground/90 text-pretty leading-relaxed max-w-4xl">
+                Pakistan-based logistics and transport consultants: 40' Flat Bed Trailers, Semi Low Bed Trailers, Low Beds & Heavy Low Beds, 45'/48' Long Heavy Haulers, Hydraulic/Multi Axle Trailers, 20' Flat Bed, 14' Flat Bed & High Wall Trucks, Small Pickups, Mazda Light Trucks, Primovers, Fork Lifters, Cranes Hydraulic/Mechanical, Warehouses, Hand Carry Services, Air Freight Services, and Sale/Purchase of Generators & Compressors. Available 24/7 for emergency services.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                <Button size="lg" variant="secondary" className="text-base sm:text-lg px-6 sm:px-8 py-3">
+              <div className="flex flex-col sm:flex-row gap-6">
+                <Button size="lg" variant="secondary" className="btn-professional px-10 py-4 text-lg font-semibold shadow-lg hover:shadow-xl">
                   Get Free Quote
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
                 <Button
-                  size="sm"
+                  size="lg"
                   variant="outline"
-                  className="text-base sm:text-lg px-6 sm:px-8 py-2.5 sm:py-3 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent"
+                  className="btn-professional px-10 py-4 text-lg font-semibold border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent shadow-lg hover:shadow-xl"
                 >
                   View Our Projects in Pakistan
                 </Button>
@@ -65,8 +68,8 @@ export default function HomePage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-muted">
-        <div className="container mx-auto px-4">
+      <section className="section-padding gradient-muted">
+        <div className="container mx-auto container-padding">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
@@ -75,43 +78,82 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+          
+          {/* Client Highlights */}
+          <div className="mt-16 text-center">
+            <Badge variant="outline" className="mb-6 text-sm font-medium px-4 py-2">
+              Trusted by Industry Leaders
+            </Badge>
+            <h3 className="text-2xl md:text-3xl font-bold mb-8 text-balance">
+              Serving Pakistan's Premier Companies
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center opacity-60">
+              <div className="text-center">
+                <div className="text-sm font-semibold text-muted-foreground">PETRONAS</div>
+              </div>
+              <div className="text-center">
+                <div className="text-sm font-semibold text-muted-foreground">Schlumberger</div>
+              </div>
+              <div className="text-center">
+                <div className="text-sm font-semibold text-muted-foreground">Crescent Steel</div>
+              </div>
+              <div className="text-center">
+                <div className="text-sm font-semibold text-muted-foreground">Descon</div>
+              </div>
+              <div className="text-center">
+                <div className="text-sm font-semibold text-muted-foreground">ICI Pakistan</div>
+              </div>
+              <div className="text-center">
+                <div className="text-sm font-semibold text-muted-foreground">Baker Hughes</div>
+              </div>
+              <div className="text-center">
+                <div className="text-sm font-semibold text-muted-foreground">MCB Bank</div>
+              </div>
+              <div className="text-center">
+                <div className="text-sm font-semibold text-muted-foreground">Standard Chartered</div>
+              </div>
+            </div>
+            <p className="text-sm text-muted-foreground mt-6">
+              And many more industry leaders across Pakistan
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <Badge variant="outline" className="mb-4">
+      <section className="section-padding">
+        <div className="container mx-auto container-padding">
+          <div className="text-center mb-20">
+            <Badge variant="outline" className="mb-6 text-sm font-medium px-4 py-2">
               Our Expertise
             </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">Heavy Haulage, Cranes, and Specialized Trailers</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
+            <h2 className="mb-8 text-balance">Heavy Haulage, Cranes, and Specialized Trailers</h2>
+            <p className="text-xl text-professional max-w-4xl mx-auto text-pretty">
               From route surveys and permits to cranes and haulage, we provide end-to-end logistics for oversized and overweight loads across Pakistan.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {services.map((service, index) => (
               <Card
                 key={index}
-                className="group hover:shadow-md transition-all duration-200 border rounded-lg"
+                className="card-professional group"
               >
-                <CardHeader className="p-4 pb-2">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="bg-primary/10 p-2 rounded-lg group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                      <service.icon className="h-5 w-5" />
+                <CardHeader className="p-6 pb-4">
+                  <div className="flex items-center gap-4 mb-3">
+                    <div className="bg-primary/10 p-3 rounded-xl group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                      <service.icon className="h-6 w-6" />
                     </div>
-                    <CardTitle className="text-lg">{service.title}</CardTitle>
+                    <CardTitle className="text-lg font-semibold">{service.title}</CardTitle>
                   </div>
-                  <CardDescription className="text-sm leading-relaxed">{service.description}</CardDescription>
+                  <CardDescription className="text-professional leading-relaxed">{service.description}</CardDescription>
                 </CardHeader>
-                <CardContent className="p-4 pt-0">
-                  <ul className="space-y-1.5">
+                <CardContent className="p-6 pt-0">
+                  <ul className="space-y-2">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center gap-2">
-                        <CheckCircle className="h-3 w-3 text-secondary" />
-                        <span className="text-sm leading-snug">{feature}</span>
+                      <li key={featureIndex} className="flex items-center gap-3">
+                        <CheckCircle className="h-4 w-4 text-secondary flex-shrink-0" />
+                        <span className="text-sm leading-relaxed">{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -120,9 +162,9 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-16">
             <Link href="/services">
-              <Button size="lg" className="px-8">
+              <Button size="lg" className="btn-professional px-10 py-4 text-lg font-semibold shadow-lg hover:shadow-xl">
                 View All Services
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -132,51 +174,51 @@ export default function HomePage() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-muted">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="section-padding gradient-muted">
+        <div className="container mx-auto container-padding">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <Badge variant="outline" className="mb-4">
+              <Badge variant="outline" className="mb-6 text-sm font-medium px-4 py-2">
                 Why Choose Us
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">Where Abnormal Loads Are Just Normal</h2>
-              <p className="text-lg text-muted-foreground mb-8 text-pretty">
-                With over two decades of experience in heavy machinery transport, we've built a reputation for handling
+              <h2 className="mb-8 text-balance">Where Abnormal Loads Are Just Normal</h2>
+              <p className="text-xl text-professional mb-10 text-pretty">
+                With over 4 years of experience in heavy machinery transport, we've built a reputation for handling
                 the most challenging logistics projects with precision, safety, and reliability.
               </p>
 
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="bg-primary p-2 rounded-lg">
-                    <Award className="h-5 w-5 text-primary-foreground" />
+              <div className="space-y-8">
+                <div className="flex items-start gap-6">
+                  <div className="bg-primary p-3 rounded-xl shadow-lg">
+                    <Award className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-2">Industry Certified</h3>
-                    <p className="text-muted-foreground">
+                    <h3 className="font-semibold mb-3 text-emphasis">Industry Certified</h3>
+                    <p className="text-professional">
                       Fully licensed and certified with all major industry safety standards and regulations.
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="bg-primary p-2 rounded-lg">
-                    <Clock className="h-5 w-5 text-primary-foreground" />
+                <div className="flex items-start gap-6">
+                  <div className="bg-primary p-3 rounded-xl shadow-lg">
+                    <Clock className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-2">24/7 Emergency Response</h3>
-                    <p className="text-muted-foreground">
+                    <h3 className="font-semibold mb-3 text-emphasis">24/7 Emergency Response</h3>
+                    <p className="text-professional">
                       Round-the-clock availability for urgent transport needs and emergency situations.
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="bg-primary p-2 rounded-lg">
-                    <Shield className="h-5 w-5 text-primary-foreground" />
+                <div className="flex items-start gap-6">
+                  <div className="bg-primary p-3 rounded-xl shadow-lg">
+                    <Shield className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-2">Comprehensive Insurance</h3>
-                    <p className="text-muted-foreground">
+                    <h3 className="font-semibold mb-3 text-emphasis">Comprehensive Insurance</h3>
+                    <p className="text-professional">
                       Full coverage protection for your valuable equipment during transport and handling.
                     </p>
                   </div>
@@ -188,7 +230,7 @@ export default function HomePage() {
               <img
                 src="/professional-heavy-machinery-transport-truck-with-.jpg"
                 alt="Heavy machinery transport operations"
-                className="rounded-lg shadow-xl"
+                className="rounded-xl shadow-2xl"
               />
             </div>
           </div>
@@ -196,16 +238,16 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">Ready to Move Your Heavy Equipment?</h2>
-          <p className="text-xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto text-pretty">
+      <section className="section-padding gradient-primary text-primary-foreground">
+        <div className="container mx-auto container-padding text-center">
+          <h2 className="mb-8 text-balance">Ready to Move Your Heavy Equipment?</h2>
+          <p className="text-xl mb-12 text-primary-foreground/90 max-w-3xl mx-auto text-pretty">
             Get a free consultation and quote for your heavy machinery transport needs. Our experts are ready to plan
             your next project.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link href="/contact">
-              <Button size="lg" variant="secondary" className="px-8">
+              <Button size="lg" variant="secondary" className="btn-professional px-12 py-4 text-lg font-semibold shadow-lg hover:shadow-xl">
                 Get Free Quote
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -213,7 +255,7 @@ export default function HomePage() {
             <Button
               size="lg"
               variant="outline"
-              className="px-8 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent"
+              className="btn-professional px-12 py-4 text-lg font-semibold border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary bg-transparent shadow-lg hover:shadow-xl"
             >
               Call: 0333-3576806
             </Button>

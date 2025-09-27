@@ -11,7 +11,24 @@ export async function POST(request: NextRequest) {
     // 4. Send confirmation emails
 
     // For now, we'll simulate the email sending
-    console.log("Contact form submission:", body)
+    console.log("Contact form submission:", {
+      name: body.name,
+      email: body.email,
+      phone: body.phone,
+      company: body.company,
+      serviceType: body.serviceType,
+      cargoType: body.cargoType,
+      equipmentWeight: body.equipmentWeight,
+      equipmentLength: body.equipmentLength,
+      equipmentWidth: body.equipmentWidth,
+      equipmentHeight: body.equipmentHeight,
+      pickupLocation: body.pickupLocation,
+      deliveryLocation: body.deliveryLocation,
+      permitsRequired: body.permitsRequired,
+      escortRequired: body.escortRequired,
+      timeline: body.timeline,
+      message: body.message,
+    })
 
     // Simulate email sending delay
     await new Promise((resolve) => setTimeout(resolve, 1000))
@@ -26,9 +43,13 @@ export async function POST(request: NextRequest) {
       Phone: ${body.phone}
       Company: ${body.company}
       Service Type: ${body.serviceType}
+      Cargo Type: ${body.cargoType}
       Equipment Weight: ${body.equipmentWeight} tons
+      Equipment Dimensions: ${body.equipmentLength}m x ${body.equipmentWidth}m x ${body.equipmentHeight}m
       Pickup Location: ${body.pickupLocation}
       Delivery Location: ${body.deliveryLocation}
+      Permits Required: ${body.permitsRequired}
+      Escort Required: ${body.escortRequired}
       Timeline: ${body.timeline}
       
       Project Details:

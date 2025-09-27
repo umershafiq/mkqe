@@ -9,8 +9,8 @@ export default function ProjectsPage() {
     {
       id: 1,
       title: "Power Plant Turbine Relocation",
-      client: "Energy Corp Solutions",
-      location: "Texas to California",
+      client: "Pakistan Power Solutions",
+      location: "Karachi to Lahore",
       weight: "450 tons",
       date: "March 2024",
       category: "Energy & Power",
@@ -31,8 +31,8 @@ export default function ProjectsPage() {
     {
       id: 2,
       title: "Manufacturing Line Equipment Move",
-      client: "Industrial Manufacturing Inc.",
-      location: "Michigan to Ohio",
+      client: "Pakistan Industrial Manufacturing Ltd.",
+      location: "Karachi to Faisalabad",
       weight: "320 tons",
       date: "January 2024",
       category: "Manufacturing",
@@ -53,8 +53,8 @@ export default function ProjectsPage() {
     {
       id: 3,
       title: "Mining Equipment Transport",
-      client: "Mountain Mining Operations",
-      location: "Colorado Remote Site",
+      client: "Balochistan Mining Corporation",
+      location: "Balochistan Remote Site",
       weight: "280 tons",
       date: "November 2023",
       category: "Mining & Extraction",
